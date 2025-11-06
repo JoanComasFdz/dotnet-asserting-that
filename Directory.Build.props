@@ -1,0 +1,29 @@
+<Project>
+  <PropertyGroup>
+    <!-- Common properties for all projects -->
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+
+    <!-- Company/Author Information -->
+    <Company>Joan Comas Fdz</Company>
+    <Authors>Joan Comas Fdz</Authors>
+    <Copyright>Copyright (c) 2025 Joan Comas Fdz</Copyright>
+
+    <!-- Repository Information -->
+    <RepositoryUrl>https://github.com/joancomasfdz/dotnet-asserting-that</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/joancomasfdz/dotnet-asserting-that</PackageProjectUrl>
+
+    <!-- Deterministic Builds -->
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <!-- Code Analysis Settings -->
+  <PropertyGroup>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+</Project>
