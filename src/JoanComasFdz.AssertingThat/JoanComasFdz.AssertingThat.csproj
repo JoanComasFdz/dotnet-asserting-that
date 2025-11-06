@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>JoanComasFdz.AssertingThat</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Joan Comas Fdz</Authors>
+    <Company>Joan Comas Fdz</Company>
+    <Description>A tiny, extensible assertion entry point providing visual distinction in test code through static class entry points and domain-specific extension methods. Enables writing assertions like Asserting.That(order).HasBeenShipped() with clear IDE syntax highlighting.</Description>
+    <Copyright>Copyright (c) 2025 Joan Comas Fdz</Copyright>
+    <PackageTags>testing;assertions;test;unit-testing;tdd;fluent;extensible;xunit;nunit</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/joancomasfdz/dotnet-asserting-that</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/joancomasfdz/dotnet-asserting-that</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Source Link for debugging support -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="/"/>
+    <None Include="../../LICENSE" Pack="true" PackagePath="/"/>
+  </ItemGroup>
+
+</Project>
